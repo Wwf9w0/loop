@@ -1,4 +1,4 @@
-package com.loop.service.persistence.jpa.cassandra;
+package com.loop.service.persistence.jpa.cassandra.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

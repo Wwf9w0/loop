@@ -1,6 +1,6 @@
 package com.loop.service.persistence.jpa.cassandra.repository;
 
-import com.loop.service.persistence.jpa.cassandra.Post;
+import com.loop.service.persistence.jpa.cassandra.entity.Post;
 import org.springframework.data.cassandra.repository.CassandraRepository;
 
 import java.util.List;

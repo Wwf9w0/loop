@@ -1,5 +1,6 @@
-package com.loop.service.persistence.jpa.cassandra;
+package com.loop.service.persistence.jpa.cassandra.entity;
 
+import com.loop.service.persistence.jpa.cassandra.entity.Comment;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
