@@ -9,7 +9,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor
-public class UserNeo4jPersistenceService {
+public class UserNodePersistenceService {
 
     private final UserNodeRepository userNodeRepository;
 
