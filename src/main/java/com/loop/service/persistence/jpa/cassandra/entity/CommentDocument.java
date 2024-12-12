@@ -11,7 +11,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Comment {
+public class CommentDocument {
 
     private String userId;
     private String text;

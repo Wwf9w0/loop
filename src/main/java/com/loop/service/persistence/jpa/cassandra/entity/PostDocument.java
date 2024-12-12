@@ -1,6 +1,5 @@
 package com.loop.service.persistence.jpa.cassandra.entity;
 
-import com.loop.service.persistence.jpa.cassandra.entity.Comment;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -17,7 +16,7 @@ import java.util.List;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-public class Post {
+public class PostDocument {
 
     @PrimaryKey
     private String id;
@@ -26,7 +25,7 @@ public class Post {
     private String content;
     private LocalDateTime createdAt;
     private List<String> likes = new ArrayList<>();
-    private List<Comment> comments = new ArrayList<>();
+    private List<CommentDocument> comments = new ArrayList<>();
     private List<String> photos = new ArrayList<>();
     private String theme;
 }
