@@ -28,5 +28,5 @@ public interface UserNodeRepository extends Neo4jRepository<UserNode, Long> {
             "MATCH (u:UserNode) WHERE id(u) = nodeId " +
             "SET u.communityId = communityId " +
             "RETURN u")
-    List<Object[]> detectCommunities();
+    List<List<UserNode>> detectCommunities();
 }

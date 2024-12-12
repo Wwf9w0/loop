@@ -20,4 +20,12 @@ public class UserNodePersistenceService {
     public List<UserNode> findShortestPathBetweenUsers(Long cUserId, Long oUserId) {
         return userNodeRepository.findShortestPathBetweenUsers(cUserId, oUserId);
     }
+
+    public List<List<UserNode>> recommentCommunities() {
+        return userNodeRepository.detectCommunities();
+    }
+
+    public UserNode findById(Long id) {
+        return userNodeRepository.findById(id).get();
+    }
 }
