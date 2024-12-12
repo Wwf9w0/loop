@@ -27,8 +27,6 @@ public class UserEntity {
     private String userName;
     private String email;
     private String password;
-    private String bio;
-    private String profilePicture;
 
     @OneToOne(cascade = CascadeType.ALL)
     private UserPreferences userPreferences;

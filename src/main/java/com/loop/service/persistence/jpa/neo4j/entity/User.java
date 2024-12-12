@@ -13,7 +13,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class UserNetwork {
+public class User {
 
     @Id
     private Long id;
@@ -24,6 +24,6 @@ public class UserNetwork {
     private Long communityId;
 
     @Relationship(type = "FRIENDS_WITH", direction = Relationship.Direction.OUTGOING)
-    private List<UserNetwork> friends;
+    private List<User> friends;
 
 }

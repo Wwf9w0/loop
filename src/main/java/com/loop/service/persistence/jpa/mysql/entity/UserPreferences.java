@@ -20,5 +20,5 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 public class UserPreferences {
 
     private String theme;
-    private boolean notificationEnabled;
+    private Boolean notificationEnabled;
 }
