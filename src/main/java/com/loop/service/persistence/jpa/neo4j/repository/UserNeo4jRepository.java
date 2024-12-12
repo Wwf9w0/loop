@@ -6,7 +6,7 @@ import org.springframework.data.neo4j.repository.query.Query;
 
 import java.util.List;
 
-public interface UserNetworkRepository extends Neo4jRepository<User, Long> {
+public interface UserNeo4jRepository extends Neo4jRepository<User, Long> {
 
     @Query("MATCH (u:User)-(:FRIENDS_WITH)->(friend:User)-[:FRIENDS_WITH]->(suggested:User) " +
             "WHERE u.id = $userId AND NOT (u)-[:FRIENDS_WITH]->(suggested) AND u <> suggested " +
